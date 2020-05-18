@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    line-height: 1.7em;
+    font-size: 16px;
+    text-align: center;
+}
+
+main{
+    margin: 0;
+    height: 80%;
+}
+
+footer{
+    margin: 0;
+}
+
+.main-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 24px;
+}
+
+.format{
+    display: block;
+}
+
+.footer-box, .github{
+    color: white;
+    font-size: 20px;
+}
+
+.github{
+    font-size: 24px;
+}
