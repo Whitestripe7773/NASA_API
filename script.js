@@ -6,15 +6,20 @@ function getPictureOfTheDay(){
 
         // Getting the title of the picture
         var title = data.title;
-        // Getting the picture
-        var video = data.url;
+        // Getting the picture/Video
+        var picvid = data.url;
         //Getting the explanation from the JSON object as String
         var explanation = data.explanation;
         // Getting the date from the JSON object as String
         var date = data.date;
 
         $(".title").text(title);     
-        $(".video").attr("src", video); 
+        if (picvid.includes("youtube")){
+            $(".video").attr("src", picvid); 
+        }
+        else{
+            $(".picture").attr("src", picvid); 
+        }
         $(".explanation").text(explanation);
         $(".date").text(date);
     });
